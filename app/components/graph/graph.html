@@ -1,7 +1,7 @@
 <div class="containter">
 
-    <div ng-show="gc.info.ready" class="row">
-        <div class="col-sm-6">
+    <div class="row">
+        <div class="col-sm-5">
             <svg width="480" height="480">
                 <rect x="{{240-gc.info.B*10}}" y="{{240-gc.info.B*10}}" height="{{gc.info.B*10}}" width="{{gc.info.B*10}}" style="fill: #00c;"
                 />
@@ -10,12 +10,16 @@
                 <rect x="240" y="240" height="{{gc.info.Y*10}}" width="{{gc.info.Y*10}}" style="fill: #dd0;" />
             </svg>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <h3> <strong> Percentages</strong></h3>
-            <p>Blue: {{gc.percent.b}}%</p>
-            <p>Red: {{gc.percent.r}}%</p>
-            <p>Green: {{gc.percent.g}}%</p>
-            <p>Yellow: {{gc.percent.y}}%</p>
+            <p>Blue: {{gc.percent.b}}%  <button class="btn btn-primary" ng-click="">more info</button></p>
+            <p>Red: {{gc.percent.r}}%  <button class="btn btn-danger" ng-click="">more info</button></p>
+            <p>Green: {{gc.percent.g}}%  <button class="btn btn-success" ng-click="">more info</button></p>
+            <p>Yellow: {{gc.percent.y}}%  <button class="btn btn-warning" ng-click="">more info</button></p>
+            <p ng-if="gc.percent.x">Unanswered: {{gc.percent.x}}%</p>
+        </div>
+        <div class="col-sm-4">
+
         </div>
     </div>
 </div>

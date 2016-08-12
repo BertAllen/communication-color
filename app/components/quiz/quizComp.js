@@ -9,21 +9,23 @@
     function QuizController(QandAService) {
         const qc = this;
         qc.quiz = QandAService.questions();
-        qc.answers = QandAService.answers;
+        qc.answers = {
+            B: 0,
+            G: 0,
+            R: 0,
+            Y: 0
+        };
 
         qc.quizTally = function (qz) {
             for (let i = 0; i < qz.length; i++) {
-                let block =qz[i]
-                QandAService.answers[block.answer]++;
+                let block = qz[i]
+                qc.answers[block.answer] = qc.answers[block.answer] ? qc.answers[block.answer] + 1 : 1;
             }
+
             console.log(qc.answers)
             qc.answers.ready = true;
-             QandAService.percent = {
-            b: Math.round(QandAService.answers.B * 4.1666),
-            g: Math.round(QandAService.answers.G * 4.1666),
-            r: Math.round(QandAService.answers.R * 4.1666),
-            y: Math.round(QandAService.answers.Y * 4.1666)
-        }
+            QandAService.setAnswers(qc.answers);
+
         }
 
     }

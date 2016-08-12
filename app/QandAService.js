@@ -1,18 +1,37 @@
 ; (function () {
     angular.module("commColor")
         .service("QandAService", function () {
-            this.answers = {
-            B: 0,
-            G: 0,
-            R: 0,
-            Y: 0
+            var answers = {
+                B: 0,
+                G: 0,
+                R: 0,
+                Y: 0
             }
-            this.percent = {
+            var percent = {
                 b: 0,
                 g: 0,
                 r: 0,
-            y:0
-        }    
+                x: 0,
+                y: 0
+            }
+
+            this.setAnswers = function (ans) {
+                answers = ans
+                percent.x = Math.round(ans[''] * 4.1666)
+                percent.b = Math.round(ans.B * 4.1666);
+                percent.g = Math.round(ans.G * 4.1666);
+                percent.r = Math.round(ans.R * 4.1666);
+                percent.y = Math.round(ans.Y * 4.1666);
+            }
+
+            this.getAnswers = function () {
+                return answers;
+            }
+
+            this.getPercentage = function () {
+                return percent
+            }
+
             this.questions = function () {
                 const questionsList = [
                     {

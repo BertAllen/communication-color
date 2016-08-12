@@ -5,19 +5,18 @@
             templateUrl: "app/components/graph/graph.html",
             controller: GraphController,
             controllerAs: "gc",
-            // bindings: {
-            //     info: "="
-            // }
+            bindings: {
+                info: "<"
+            }
         });
 
     GraphController.$inject = ["QandAService"]
 
     function GraphController(QandAService) {
         const gc = this;
-
-        gc.info = QandAService.answers;
-        debugger;
-        gc.percent = QandAService.percent;
+        // debugger;
+        gc.info = QandAService.getAnswers();
+        gc.percent = QandAService.getPercentage();
     }
 
 } ());

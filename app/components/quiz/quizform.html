@@ -12,9 +12,9 @@
     </div>
     </div>
 </div>
-<button class="btn btn-warning" type="submit">Submit Quiz</button>
+<button ng-if="!qc.answers.ready" class="btn btn-info" type="submit">Submit Quiz</button>
 </div>
 </div>
 </form>
 
-<!--<graph-component info="qc.answers"></graph-component>-->
+<graph-component ng-if="qc.answers.ready" info= "QandAService.getAnswers()"></graph-component>
