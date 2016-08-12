@@ -1,0 +1,21 @@
+<div class="containter">
+
+    <div ng-if="gc.info.ready" class="row">
+        <div class="col-sm-6">
+            <svg width="480" height="480">
+                <rect x="{{240-gc.info.B*10}}" y="{{240-gc.info.B*10}}" height="{{gc.info.B*10}}" width="{{gc.info.B*10}}" style="fill: #00c;"
+                />
+                <rect x="240" y="{{240-gc.info.R*10}}" height="{{gc.info.R*10}}" width="{{gc.info.R*10}}" style="fill: #c00;" />
+                <rect x="{{240-gc.info.G*10}}" y="240" height="{{gc.info.G*10}}" width="{{gc.info.G*10}}" style="fill: #0a0;" />
+                <rect x="240" y="240" height="{{gc.info.Y*10}}" width="{{gc.info.Y*10}}" style="fill: #dd0;" />
+            </svg>
+        </div>
+        <div class="col-sm-6">
+            <h3> <strong> Percentages</strong></h3>
+            <p>Blue: {{gc.percent.b}}%</p>
+            <p>Green: {{gc.percent.g}}%</p>
+            <p>Red: {{gc.percent.r}}%</p>
+            <p>Yellow: {{gc.percent.y}}%</p>
+        </div>
+    </div>
+</div>

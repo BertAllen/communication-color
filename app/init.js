@@ -22,6 +22,7 @@
                 qc.answers[block.answer]++;
             }
             console.log(qc.answers)
+            qc.answers.ready = true;
         }
 
     }

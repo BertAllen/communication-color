@@ -2,3 +2,13 @@
 .card{
     border: solid 2px
 }
+
+h1{
+    text-align: center;
+    color: #555,
+}
+
+.selected{
+    border: solid 2px #050;
+    background: #f7f7f7
+}

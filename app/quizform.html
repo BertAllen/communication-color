@@ -4,7 +4,7 @@
 <div class="row">
 
 <div ng-repeat="question in qc.quiz track by $index">
-    <div class="card col-sm-3">
+    <div class="card col-sm-3" ng-class="{'selected': question.answer}">
 
     <div ng-repeat="block in question.choices">
         <input name="{{question.id}}" type="radio" value="{{block.color}}" ng-model="question.answer">
@@ -16,3 +16,5 @@
 </div>
 </div>
 </form>
+
+<graph-component info="qc.answers"></graph-component>
