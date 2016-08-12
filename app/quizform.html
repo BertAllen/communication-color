@@ -1,0 +1,17 @@
+<form ng-submit="qc.quizTally(qc.colorCount)">
+<div class="container">
+
+<div class="row">
+
+<div ng-repeat="question in qc.quiz track by $index">
+    <div class="card col-sm-3">
+
+    <div ng-repeat="block in question.choices">
+        <input name="{{question.id}}" type="radio" value="{{block.color}}" ng-model="answer">
+        <label for="{{block.id}}">{{block.ans}}</label>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</form>
