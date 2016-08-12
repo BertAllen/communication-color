@@ -5,6 +5,7 @@
                 const questionsList = [
                     {
                         id: 1,
+                        answer: "",
                         choices: [
                             {
                                 ans: "Aggressive",
@@ -24,8 +25,8 @@
                             }]
                     },
                     {
-                                                id: 2,
-
+                        id: 2,
+                        answer: "",
                         choices: [
                             {
                                 ans: "Easy On Others",
@@ -45,8 +46,9 @@
                             }]
                     },
                     {
-                                                id: 3,
-choices: [
+                        id: 3,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Well-Disciplined",
                                 color: "B"
@@ -65,8 +67,9 @@ choices: [
                             }]
                     },
                     {
-                                                id:4,
-choices: [
+                        id: 4,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Cautious",
                                 color: "B"
@@ -84,8 +87,9 @@ choices: [
                                 color: "G"
                             }]
                     },
-                    {                        id: 5,
-
+                    {
+                        id: 5,
+                        answer: "",
                         choices: [
                             {
                                 ans: "Restless",
@@ -105,8 +109,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 6,
-choices: [
+                        id: 6,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Talkative",
                                 color: "Y"
@@ -125,8 +130,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 7,
-choices: [
+                        id: 7,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Diplomatic",
                                 color: "B"
@@ -145,8 +151,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 8,
-choices: [
+                        id: 8,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Contented",
                                 color: "G"
@@ -165,8 +172,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 9,
-choices: [
+                        id: 9,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Follows Directions",
                                 color: "B"
@@ -185,8 +193,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 10,
-choices: [
+                        id: 10,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Sticks To Decisions",
                                 color: "R"
@@ -205,8 +214,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 11,
-choices: [
+                        id: 11,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Considerate",
                                 color: "G"
@@ -225,8 +235,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 12,
-choices: [
+                        id: 12,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Eager",
                                 color: "R"
@@ -245,8 +256,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 13,
-choices: [
+                        id: 13,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Adaptable",
                                 color: "B"
@@ -265,8 +277,8 @@ choices: [
                             }]
                     },
                     {
-                                                id: 14,
-choices: [
+                        id: 14,
+                        choices: [
                             {
                                 ans: "Wants To Have Fun",
                                 color: "Y"
@@ -285,8 +297,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 15,
-choices: [
+                        id: 15,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Respected",
                                 color: "Y"
@@ -305,8 +318,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 16,
-choices: [
+                        id: 16,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Quiet",
                                 color: "G"
@@ -325,8 +339,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 17,
-choices: [
+                        id: 17,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Takes Risks",
                                 color: "R"
@@ -345,8 +360,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 18,
-choices: [
+                        id: 18,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Even-Tempered",
                                 color: "G"
@@ -365,8 +381,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 19,
-choices: [
+                        id: 19,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Brave",
                                 color: "R"
@@ -385,8 +402,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 20,
-choices: [
+                        id: 20,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Supportive",
                                 color: "G"
@@ -405,8 +423,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 21,
-choices: [
+                        id: 21,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Convincing",
                                 color: "Y"
@@ -425,8 +444,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 22,
-choices: [
+                        id: 22,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Confident",
                                 color: "Y"
@@ -445,8 +465,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 23,
-choices: [
+                        id: 23,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Competitive",
                                 color: "R"
@@ -465,8 +486,9 @@ choices: [
                             }]
                     },
                     {
-                                                id: 24,
-choices: [
+                        id: 24,
+                        answer: "",
+                        choices: [
                             {
                                 ans: "Respectful",
                                 color: "B"
@@ -485,7 +507,7 @@ choices: [
                             }]
                     }
                 ]
-            return questionsList;
-            }    
+                return questionsList;
+            }
         })
 } ());

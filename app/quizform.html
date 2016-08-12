@@ -1,4 +1,4 @@
-<form ng-submit="qc.quizTally(qc.colorCount)">
+<form ng-submit="qc.quizTally(qc.quiz)">
 <div class="container">
 
 <div class="row">
@@ -7,11 +7,12 @@
     <div class="card col-sm-3">
 
     <div ng-repeat="block in question.choices">
-        <input name="{{question.id}}" type="radio" value="{{block.color}}" ng-model="answer">
+        <input name="{{question.id}}" type="radio" value="{{block.color}}" ng-model="question.answer">
         <label for="{{block.id}}">{{block.ans}}</label>
     </div>
     </div>
 </div>
+<button class="btn btn-warning" type="submit">Submit Quiz</button>
 </div>
 </div>
 </form>
