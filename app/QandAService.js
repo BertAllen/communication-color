@@ -1,6 +1,18 @@
 ; (function () {
     angular.module("commColor")
-        .service("TestQuestions", function () {
+        .service("QandAService", function () {
+            this.answers = {
+            B: 0,
+            G: 0,
+            R: 0,
+            Y: 0
+            }
+            this.percent = {
+                b: 0,
+                g: 0,
+                r: 0,
+            y:0
+        }    
             this.questions = function () {
                 const questionsList = [
                     {

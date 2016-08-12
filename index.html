@@ -1,19 +1,21 @@
 <html ng-app="commColor">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Communication Colors</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <h1> <strong> The Color Of Your Communication Styles</strong></h1>
+    
     <quiz-component></quiz-component>
     
+    <graph-component></graph-component>
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="app/plugins/d3.min.js"></script>
-    <script src="app/init.js"></script>
-    <script src="app/questions.js"></script>
-    <script src="app/components/visualize.js"></script>
+    <script src="app/components/quiz/quizComp.js"></script>
+    <script src="app/QandAService.js"></script>
+    <script src="app/components/graph/graphComp.js"></script>
 </body>
 </html>
