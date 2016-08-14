@@ -545,77 +545,81 @@
                 return questionsList;
             }
 
-            const moreInfo = {
-                color: [
-                    {
-                        Blue: {
-                            atWork: [
-                                "Business-like", "No-nonsense attitude", "Not Very trusting of new acquaintances", "Very precise and task oriented",
-                                "Know the rules and prefer developed policies", "Hard worker and very conscientious", "Tend to perfectionism",
-                    "Prefer doing the job right over meeting deadlines"
-                            ],
-                            mostEffective: [
-                                "Doing tasks that call for accuracy and precision", "Effective at maintaining high standards",
-                    "Making decisions based on critical analysis", "Working on Projects that give visible results"            
-                            ],
-                            leastEffective: [
-                    "Rushed to make sudden changes", "Making quick decisions", "Don't like taking risks"
-                            ],
-                            howToImprove: [
-                    "By being more tolerant and less critical of others", "Willing to take more risk", "More confidence in their own judgment"
-                ]            
-                        },//end of Blue info
-                        Red: {
-                            atWork: [
-                                "Direct, clear and demanding", "Think they know best and want it done their way", "Impatient with 'slackers'",
-                    "Don't mind their decisions questioned if there is a better way", "Workaholics", "Have a clean office"            
-                            ],
-                            mostEffective: [
-                                "Given the opportunity to be creative", "Given challenging jobs that require strong leadership and problem solving skills",
-                    "Good at seeing the big picture", "Making decisions"            
-                            ],
-                            leastEffective: [
-                                "Placed in mundane jobs", "Don't like to be fenced in", "Under the leadership of an indecisive person", "Given technical jobs or projects",
-                    "When the are required to follow rather than lead"            
-                            ],
-                            howToImprove: [
-                    "By being more sensitive towards co-workers and being less authoritarian", "Work at maintaining good people skills", "Try to be less 'bossy'"
-                ]            
-                        },//end of Red info
-                        Green: {
-                            atWork: [
-                                "Consistent and determined", "Follow instructions well", "Easy to work with", "Concentrate on difficult tasks well", 
-                    "Slow to make decisions", "Want prior notice for change", "Expect appreciation for work well done", "Not Agressive"            
-                            ],
-                            mostEffective: [
-                    "Performing routine tasks", "Good at following procedures and rules", "Can be trusted to perform consistently", "Are good listeners"
-                            ],
-                            leastEffective: [
-                    "Must work on a variety of jobs", "Must make quick changes", "Do not like to make major decisions"
-                            ],
-                            howToImprove: [
-                    "By being more self-confident", "Willing to take more risk", "Being more assertive"
-                ]            
-                        },//end of Green info 
-                        Yellow: {
-                            atWork: [
-                                "Group leaders", "Want to sell ideas", "Build excitement and motivate well", "Have messy desks or work areas",
-                    "Not detailed and often work from hunches", "Communicate ideas well", "People problems are more important than tasks"            
-                            ],
-                            mostEffective: [
-                                "Generating excitement and enthusiasm", "Work well with change", "Helping people with personal problems",
-                    "Good at delegating", "Naturally good at making presentations"            
-                            ],
-                            leastEffective: [
-                    "Working alone on projects", "Looking at details", "Give poor performers too many chances", "Hesitant to give criticism"
-                            ],
-                            howToImprove: [
-                    "By being more accurate", "By being more realistic with goals", "By being more objective with people", "Stop talking and listen more"
-                ]            
-            }//end of Yellow info            
-        }
-    ]//color prop closer
-}//moreInfo obj closer
+            const moreInfo = [                    
+                {
+                    Blue: {
+                        atWork: [
+                            "Business-like", "No-nonsense attitude", "Not Very trusting of new acquaintances", "Very precise and task oriented",
+                            "Know the rules and prefer developed policies", "Hard worker and very conscientious", "Tend to perfectionism",
+                            "Prefer doing the job right over meeting deadlines"
+                        ],
+                        mostEffective: [
+                            "Doing tasks that call for accuracy and precision", "Effective at maintaining high standards",
+                            "Making decisions based on critical analysis", "Working on Projects that give visible results"
+                        ],
+                        leastEffective: [
+                            "Rushed to make sudden changes", "Making quick decisions", "Don't like taking risks"
+                        ],
+                        howToImprove: [
+                            "By being more tolerant and less critical of others", "Willing to take more risk", "More confidence in their own judgment"
+                        ]
+                    }//end of Blue info
+                },//end of Blue object
+                {
+                    Red: {
+                        atWork: [
+                            "Direct, clear and demanding", "Think they know best and want it done their way", "Impatient with 'slackers'",
+                            "Don't mind their decisions questioned if there is a better way", "Workaholics", "Have a clean office"
+                        ],
+                        mostEffective: [
+                            "Given the opportunity to be creative", "Given challenging jobs that require strong leadership and problem solving skills",
+                            "Good at seeing the big picture", "Making decisions"
+                        ],
+                        leastEffective: [
+                            "Placed in mundane jobs", "Don't like to be fenced in", "Under the leadership of an indecisive person", "Given technical jobs or projects",
+                            "When the are required to follow rather than lead"
+                        ],
+                        howToImprove: [
+                            "By being more sensitive towards co-workers and being less authoritarian", "Work at maintaining good people skills", "Try to be less 'bossy'"
+                        ]
+                    }//end of Red info
+                },//end of Red object
+                {
+                    Green: {
+                        atWork: [
+                            "Consistent and determined", "Follow instructions well", "Easy to work with", "Concentrate on difficult tasks well",
+                            "Slow to make decisions", "Want prior notice for change", "Expect appreciation for work well done", "Not Agressive"
+                        ],
+                        mostEffective: [
+                            "Performing routine tasks", "Good at following procedures and rules", "Can be trusted to perform consistently", "Are good listeners"
+                        ],
+                        leastEffective: [
+                            "Must work on a variety of jobs", "Must make quick changes", "Do not like to make major decisions"
+                        ],
+                        howToImprove: [
+                            "By being more self-confident", "Willing to take more risk", "Being more assertive"
+                        ]
+                    }//end of Green info
+                },//end of Green object 
+                {
+                    Yellow: {
+                        atWork: [
+                            "Group leaders", "Want to sell ideas", "Build excitement and motivate well", "Have messy desks or work areas",
+                            "Not detailed and often work from hunches", "Communicate ideas well", "People problems are more important than tasks"
+                        ],
+                        mostEffective: [
+                            "Generating excitement and enthusiasm", "Work well with change", "Helping people with personal problems",
+                            "Good at delegating", "Naturally good at making presentations"
+                        ],
+                        leastEffective: [
+                            "Working alone on projects", "Looking at details", "Give poor performers too many chances", "Hesitant to give criticism"
+                        ],
+                        howToImprove: [
+                            "By being more accurate", "By being more realistic with goals", "By being more objective with people", "Stop talking and listen more"
+                        ]
+                    }//end of Yellow info            
+                }//end of Yellow object
+            ]//moreInfo array closer
 
         })
 } ());
