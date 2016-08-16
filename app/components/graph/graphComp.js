@@ -15,10 +15,10 @@
     function GraphController(QandAService) {
         const gc = this;
         gc.show = {
-            b: false,
-            g: false,
-            r: false,
-            y: false,
+            b: "",
+            g: "",
+            r: "",
+            y: "",
             none: true
         }
         // debugger;
