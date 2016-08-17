@@ -1,10 +1,10 @@
 <div ng-repeat="color in ic.moreInfo">
-    <div ng-show="ic.show.b == color.alias || ic.show.g == color.alias || ic.show.r == color.alias || ic.show.y == color.alias">
+    <div ng-show="ic.show.b==color.alias || ic.show.g==color.alias || ic.show.r==color.alias || ic.show.y==color.alias">
     <h2>{{color.color}}</h2>
     <ul ng-repeat="(catagory, val) in color.info">
         <h3>{{catagory}}</h3>
         <li ng-repeat="item in val">{{item}}</li>
     </ul>
-<button class="btn btn-info" ng-click="ic.show[color.alias]=''">Hide {{color.color}}</button>
+<button class="btn btn-default" ng-click="ic.show[color.alias]=''">Hide {{color.color}}</button>
     </div>
 </div>
