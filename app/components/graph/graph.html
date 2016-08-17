@@ -19,10 +19,10 @@
         </div>
         <div class="col-sm-2">
             <h3> <strong> Percentages</strong></h3>
-            <p><strong>Blue: {{gc.percent.b}}% </strong><button class="btn btn-primary" ng-click="gc.show.b='b'; gc.show.none=false">more info</button></p>
-            <p><strong>Red: {{gc.percent.r}}% </strong><button class="btn btn-danger" ng-click="gc.show.r='r'; gc.show.none=false">more info</button></p>
-            <p><strong>Green: {{gc.percent.g}}% </strong><button class="btn btn-success" ng-click="gc.show.g='g'; gc.show.none=false">more info</button></p>
-            <p><strong>Yellow: {{gc.percent.y}}% </strong><button class="btn btn-warning" ng-click="gc.show.y='y'; gc.show.none=false">more info</button></p>
+            <p><strong>Blue: {{gc.percent.b}}% </strong><button ng-hide="gc.show.b" class="btn btn-primary" ng-click="gc.show.b='b'; gc.show.none=false">more info</button><button ng-show="gc.show.b" class="btn btn-primary" ng-click="gc.show.b=''">less info</button></p>
+            <p><strong>Red: {{gc.percent.r}}% </strong><button ng-hide="gc.show.r" class="btn btn-danger" ng-click="gc.show.r='r'; gc.show.none=false">more info</button><button ng-show="gc.show.r" class="btn btn-danger" ng-click="gc.show.r=''">less info</button></p>
+            <p><strong>Green: {{gc.percent.g}}% </strong><button ng-hide="gc.show.g" class="btn btn-success" ng-click="gc.show.g='g'; gc.show.none=false">more info</button><button ng-show="gc.show.g" class="btn btn-success" ng-click="gc.show.g=''">less info</button></p>
+            <p><strong>Yellow: {{gc.percent.y}}% </strong><button ng-hide="gc.show.y" class="btn btn-warning" ng-click="gc.show.y='y'; gc.show.none=false">more info</button><button ng-show="gc.show.y" class="btn btn-warning" ng-click="gc.show.y=''">less info</button></p>
             <p ng-if="gc.percent.x"><strong>Unanswered: {{gc.percent.x}}%</strong></p>
         </div>
         <div class="col-sm-5">
