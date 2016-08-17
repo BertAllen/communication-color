@@ -548,9 +548,10 @@
             const moreInfo = [
                 {
                     color: "Blue",
+                    alias: "b",
                     info: {
                         "At Work": [
-                            "Business-like", "No-nonsense attitude", "Not Very trusting of new acquaintances", "Very precise and task oriented",
+                            "Business-like", "No-nonsense attitude", "Not very trusting of new acquaintances", "Very precise and task oriented",
                             "Know the rules and prefer developed policies", "Hard worker and very conscientious", "Tend to perfectionism",
                             "Prefer doing the job right over meeting deadlines"
                         ],
@@ -568,6 +569,7 @@
                 },//end of Blue info & object
                 {
                     color: "Red",
+                    alias: "r",
                     info: {
                         "At Work": [
                             "Direct, clear and demanding", "Think they know best and want it done their way", "Impatient with 'slackers'",
@@ -582,12 +584,13 @@
                             "When the are required to follow rather than lead"
                         ],
                         "How To Improve": [
-                            "By being more sensitive towards co-workers and being less authoritarian", "Work at maintaining good people skills", "Try to be less 'bossy'"
+                            "By being more sensitive towards co-workers and being less authoritarian", "Continually work at maintaining good people skills", "Try to be less 'bossy'"
                         ]
                     }
                 },//end of Red info & object
                 {
                     color: "Green",
+                    alias: "g",
                     info: {
                         "At Work": [
                             "Consistent and determined", "Follow instructions well", "Easy to work with", "Concentrate on difficult tasks well",
@@ -600,12 +603,13 @@
                             "Must work on a variety of jobs", "Must make quick changes", "Do not like to make major decisions"
                         ],
                         "How To Improve": [
-                            "By being more self-confident", "Willing to take more risk", "Being more assertive"
+                            "By being more self-confident", "Willing to take more risks", "Being more assertive"
                         ]
                     }
                 },//end of Green info & object 
                 {
                     color: "Yellow",
+                    alias: "y",
                     info: {
                         "At Work": [
                             "Group leaders", "Want to sell ideas", "Build excitement and motivate well", "Have messy desks or work areas",
