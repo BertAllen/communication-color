@@ -2,9 +2,10 @@
 <div class="container">
 
 <div class="row">
-
+<p style="color: #700" ng-if="qc.quiz.email=='bad'">This is not a valid e-mail, please choose another.</p>
+<input type="text" placeholder="name" ng-model="qc.quiz.name"><input type="email" placeholder="e-mail" ng-model="qc.quiz.email"> <button class="btn btn-default" type="button" ng-click="qc.confirm(qc.quiz.name, qc.quiz.email)">Confirm User ID</button>
 <div ng-repeat="question in qc.quiz track by $index">
-    <div class="card col-sm-3" ng-class="{'selected': question.answer}">
+    <div ng-if="question.id" class="card col-sm-3" ng-class="{'selected': question.answer}">
 
     <div ng-repeat="block in question.choices">
         <input name="{{question.id}}" type="radio" value="{{block.color}}" ng-model="question.answer">
